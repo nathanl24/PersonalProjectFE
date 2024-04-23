@@ -21,15 +21,30 @@ function AboutMe() {
                 engineering. I would want to be pushing myself to becoming a mentor or team lead to be able to support other engineers
                 and to be able to provide a more positive impact within a workplace.
             </p>
-<br/>
-<br/>
-<br/>
-<br/>
-<h1>Personal Profile</h1>
-// Make 4 cards - Pictures of rugby, walking, daily/ social and work. Give images links e.g. Dinas website for rugby. brief 
-overview underneath. Maybe have a button to have some sort of feature.
+            <br />
+            <br />
+            <br />
+            <br />
+            <h1>Personal Profile</h1>
+// Make 4 cards - Pictures of rugby, walking, daily/ social and work. Give images links e.g. Dinas website for rugby. brief
+            overview underneath. Maybe have a button to have some sort of feature.
+            
 
-</div>
+            <div id="itemCard" className="card-group d-inline-flex padding" style={{ padding: "20px" }}>
+                <div class="card border-dark mb-3" style={{ width: "17%" }}>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">PUT PIC HERE  </li>
+                        <li class="list-group-item">Description of what it is </li>
+                    </ul>
+                    <button type="button"  className="btn btn-success ">
+                        Check out more here
+                    </button>
+                </div>
+            </div>
+
+
+        </div>
+
     );
 }
 
