@@ -5,15 +5,16 @@ import Home from './Components/Home/Home.jsx';
 import Creations from './Components/Creations/Creations.jsx';
 import AboutMe from './Components/AboutMe/AboutMe.jsx';
 import React from 'react';
-// Logo import
-
+import PersonalLife from './Components/AboutMe/PersonalLife.jsx';
+import WorkLife from './Components/AboutMe/WorkLife.jsx';
+import Rugby from './Components/AboutMe/Rugby.jsx';
 
 function App() {
   return (
-  <div class="p-3 mb-2 bg-warning text-dark" style={{ overflow: "auto" }}>
-    <Router>
-      <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-        <a class="navbar-brand" href="#"></a>
+    <div class="p-3 mb-2 bg-warning text-dark" style={{ overflow: "auto" }}>
+      <Router>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+          <a class="navbar-brand" href="#"></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -28,19 +29,23 @@ function App() {
               <li class="nav-item">
                 <Link className="nav-item nav-link active" to='/AboutMe'>About Me</Link>
               </li>
-          </div>
-          </div>
-      </nav>
-      <div >
-        <Routes>
-          <Route path='/Home' element={<Home/>} />
-          <Route path='/Creations' element={<Creations/>} />
-          <Route path='/AboutMe' element={<AboutMe/>} />
-        </Routes>
-      </div>
 
-    </Router>
-  </div>
+            </div>
+          </div>
+        </nav>
+        <div >
+          <Routes>
+            <Route path='/Home' element={<Home />} />
+            <Route path='/Creations' element={<Creations />} />
+            <Route path='/AboutMe' element={<AboutMe />} />
+            <Route path='/PersonalLife' element={<PersonalLife />} />
+            <Route path='/WorkLife' element={<WorkLife />} />
+            <Route path='/Rugby' element={<Rugby />} />
+          </Routes>
+        </div>
+
+      </Router>
+    </div>
   );
 }
 

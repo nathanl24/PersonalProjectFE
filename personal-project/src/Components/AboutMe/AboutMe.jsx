@@ -1,4 +1,10 @@
+import LloydsLogo from "C:/Users/User/PersonalProject/FrontEnd/PersonalProjectFE/personal-project/src/Pictures/LloydsLogo.png";
+import RugbySolo from "C:/Users/User/PersonalProject/FrontEnd/PersonalProjectFE/personal-project/src/Pictures/RugbySolo.jpg";
+import Camden from "C:/Users/User/PersonalProject/FrontEnd/PersonalProjectFE/personal-project/src/Pictures/Camden.jpg";
+import { useNavigate, } from "react-router-dom";
+
 function AboutMe() {
+    const navigate = useNavigate();
     return (
         <div>
             <br />
@@ -26,24 +32,54 @@ function AboutMe() {
             <br />
             <br />
             <h1>Personal Profile</h1>
-// Make 4 cards - Pictures of rugby, walking, daily/ social and work. Give images links e.g. Dinas website for rugby. brief
-            overview underneath. Maybe have a button to have some sort of feature.
-            
+Give images links e.g. Dinas website for rugby.
 
-            <div id="itemCard" className="card-group d-inline-flex padding" style={{ padding: "20px" }}>
+            <br />
+            <div id="itemCard" className="Cards" >
                 <div class="card border-dark mb-3" style={{ width: "17%" }}>
                     <ul class="list-group list-group-flush">
-                        <li class="list-group-item">PUT PIC HERE  </li>
-                        <li class="list-group-item">Description of what it is </li>
+                        <li class="list-group-item">Work Life </li>
+                        <li class="list-group-item"><img alt='Lloyds Logo' src={LloydsLogo} className="item-image" /></li>
                     </ul>
-                    <button type="button"  className="btn btn-success ">
-                        Check out more here
-                    </button>
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <button className="btn btn-primary" onClick={() => {
+                        navigate("/WorkLife");
+                    }}>Find out more</button>
                 </div>
             </div>
 
+            <div id="itemCard" className="Cards">
+                <div class="card border-dark mb-3" style={{ width: "17%" }}>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Personal Life </li>
+                        <li class="list-group-item"><img alt='Picture with Girlfriend' src={Camden} className="item-image" />  </li>
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                    </ul>
+                    <button className="btn btn-primary" onClick={() => {
+                        navigate("/PersonalLife");
+                    }}>Find out more</button>
+                </div>
+            </div>
 
-        </div>
+            <div id="itemCard" className="Cards" style={{ padding: "20px" }}>
+                <div class="card border-dark mb-3" style={{ width: "17%" }}>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Sports </li>
+                        <li class="list-group-item"><img alt='Rugby Solo Picture' src={RugbySolo} className="item-image" />  </li>
+                    </ul>
+                    <button className="btn btn-primary" onClick={() => {
+                        navigate("/Rugby");
+                    }}>Find out more</button>
+                </div>
+            </div>
+
+        </div >
 
     );
 }
