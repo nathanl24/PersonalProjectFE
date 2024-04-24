@@ -2,12 +2,12 @@ import './App.css';
 import { Link, Route, Routes, BrowserRouter as Router } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Home from './Components/Home/Home.jsx';
-import Creations from './Components/Creations/Creations.jsx';
 import AboutMe from './Components/AboutMe/AboutMe.jsx';
 import React from 'react';
 import PersonalLife from './Components/AboutMe/PersonalLife.jsx';
 import WorkLife from './Components/AboutMe/WorkLife.jsx';
 import Rugby from './Components/AboutMe/Rugby.jsx';
+import DisplayScoreboard from './Components/Scoreboards/DisplayScoreboard.jsx';
 
 function App() {
   return (
@@ -24,23 +24,22 @@ function App() {
                 <Link class="nav-item nav-link active" to="/Home">Home</Link>
               </li>
               <li class="nav-item">
-                <Link className="nav-item nav-link active" to='/Creations'>Creations</Link>
-              </li>
-              <li class="nav-item">
                 <Link className="nav-item nav-link active" to='/AboutMe'>About Me</Link>
               </li>
-
+              <li class="nav-item">
+                <Link className="nav-item nav-link active" to='/DisplayScoreboard'>Scoreboard</Link>
+              </li>
             </div>
           </div>
         </nav>
         <div >
           <Routes>
             <Route path='/Home' element={<Home />} />
-            <Route path='/Creations' element={<Creations />} />
             <Route path='/AboutMe' element={<AboutMe />} />
             <Route path='/PersonalLife' element={<PersonalLife />} />
             <Route path='/WorkLife' element={<WorkLife />} />
             <Route path='/Rugby' element={<Rugby />} />
+            <Route path='/DisplayScoreboard' element={<DisplayScoreboard/>} />
           </Routes>
         </div>
 

@@ -31,15 +31,14 @@ function AboutMe() {
             <br />
             <br />
             <br />
-            <h1>Personal Profile</h1>
-Give images links e.g. Dinas website for rugby.
+            <h1>What do I do!</h1>
 
             <br />
             <div id="itemCard" className="Cards" >
                 <div class="card border-dark mb-3" style={{ width: "17%" }}>
                     <ul class="list-group list-group-flush">
                         <li class="list-group-item">Work Life </li>
-                        <li class="list-group-item"><img alt='Lloyds Logo' src={LloydsLogo} className="item-image" /></li>
+                        <li class="list-group-item"><a href="https://www.lloydsbank.com/" target="_blank"><img alt='Lloyds Logo' src={LloydsLogo} className="item-image" /></a></li>
                     </ul>
                     <br />
                     <br />
@@ -70,8 +69,8 @@ Give images links e.g. Dinas website for rugby.
             <div id="itemCard" className="Cards" style={{ padding: "20px" }}>
                 <div class="card border-dark mb-3" style={{ width: "17%" }}>
                     <ul class="list-group list-group-flush">
-                        <li class="list-group-item">Sports </li>
-                        <li class="list-group-item"><img alt='Rugby Solo Picture' src={RugbySolo} className="item-image" />  </li>
+                        <li class="list-group-item">Rugby </li>
+                        <li class="list-group-item"> <a href="https://dinaspowys.rfc.wales/" target="_blank"><img alt='Rugby Solo Picture' src={RugbySolo} className="item-image"/> </a> </li>
                     </ul>
                     <button className="btn btn-primary" onClick={() => {
                         navigate("/Rugby");
