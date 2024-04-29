@@ -29,8 +29,10 @@ const WorkLife= () => {
         ];
       
         return (
-          <div className="app">
+            <div className="worklife-container">
+         <div className="worklife-content">
             <Slideshow images={images} />
+          </div>
           </div>
         );
       }; 

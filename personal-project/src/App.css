@@ -112,3 +112,33 @@ height: auto;
 .buttons button:hover {
   background-color: #0056b3;
 }
+
+.worklife-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Set the container height to full viewport height */
+}
+
+.worklife-content {
+  width: 80%; /* Adjust this to set the width of the content */
+  max-width: 600px; /* Set a maximum width for the content */
+  padding: 20px;
+  border: 1px solid #ccc; /* Optional: Add a border */
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Optional: Add a box shadow */
+}
+
+/* Center images within the Slideshow component */
+.worklife-content .slideshow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px; /* Adjust height of the slideshow container */
+}
+
+.worklife-content .slideshow img {
+  max-width: 100%; /* Ensure images don't exceed their container */
+  max-height: 100%; /* Ensure images don't exceed their container */
+  object-fit: contain; /* Maintain aspect ratio */
+}

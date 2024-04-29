@@ -8,6 +8,7 @@ import PersonalLife from './Components/AboutMe/PersonalLife.jsx';
 import WorkLife from './Components/AboutMe/WorkLife.jsx';
 import Rugby from './Components/AboutMe/Rugby.jsx';
 import DisplayScoreboard from './Components/Scoreboards/DisplayScoreboard.jsx';
+import Login from './Components/Login/Login.jsx';
 
 function App() {
   return (
@@ -34,12 +35,14 @@ function App() {
         </nav>
         <div >
           <Routes>
+            <Route path='/' element={<Login/>} />
             <Route path='/Home' element={<Home />} />
             <Route path='/AboutMe' element={<AboutMe />} />
             <Route path='/PersonalLife' element={<PersonalLife />} />
             <Route path='/WorkLife' element={<WorkLife />} />
             <Route path='/Rugby' element={<Rugby />} />
             <Route path='/DisplayScoreboard' element={<DisplayScoreboard/>} />
+            
           </Routes>
         </div>
 
